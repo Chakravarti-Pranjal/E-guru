@@ -1,0 +1,293 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    width: max-content;
+}
+
+section{
+    padding: 0 60px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    width: 100%;
+}
+
+.nav{
+    display: flex;
+}
+.nav li{
+    list-style: none;
+    padding: 0 40px;
+}
+.nav li a{
+    text-decoration: none;
+    color: rgb(34, 32, 32);
+}
+.nav li a:hover{
+    color: red;
+}
+.navbar img{
+    display: none;
+}
+
+.logo-container{
+    display: flex;
+    align-items: center;
+}
+.logo-container h2{
+    padding: 0 10px;
+    font-weight: 750;
+}
+
+.btn{
+    padding: 10px 30px;
+    background-color: #fff;
+    border: 1px solid rgb(167, 166, 166);
+}
+
+.nav li a .active{
+    color: red;
+}
+
+.main{
+    display: flex;
+    width: 100%;
+   justify-content: space-between;
+ 
+}
+
+.left{
+    background-color:rgb(252, 252, 252);
+    width: 70%;
+    padding: 2px;
+    padding-top: 100px;
+    margin-top: 10px;
+}
+
+.main .left h1{
+    font-size: 4rem;
+    line-height: 1.5;
+    color: rgb(26, 26, 26);
+    padding-bottom: 30px;
+}
+.main .left p{
+    border-left: 2px solid rgb(153, 151, 151);
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    padding: 8px 10px;
+    color: rgb(26, 26, 26);
+}
+
+.btn-container{
+    padding-top: 30px;
+}
+
+.btn1{
+    color: #fff;
+    background-color: rgb(248, 79, 49);
+    border: none;
+    padding: 12px 30px;
+    margin-right: 10px;
+}
+
+.right{
+    padding-top: 10px; 
+    padding-left: 0px;
+    width: 60%;
+    overflow-x: hidden;
+}
+
+.right .img{
+    position: absolute;
+    left: 400px;
+    top: 553px;
+}
+
+.category{
+    background-color: rgb(3, 5, 29);
+    color: #fff;
+    padding: 40px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     text-align: center;
+     width: auto;
+}
+.head{
+   
+    line-height: 1.5;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.head .heading{
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+.f1{
+    background-color: cyan;
+    padding: 15px;
+    border-radius: 5px;
+    
+}
+.f2{
+    background-color: orange;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.f3{
+    background-color: blue;
+    padding: 15px;
+    border-radius: 5px;
+     margin-bottom: 10px;
+}
+
+.features{
+    display: flex;
+     margin-bottom: 10px;
+}
+
+.feature-box{
+    width: 300px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    line-height: 1.5; 
+    padding: 10px;
+}
+
+
+/* Responsive design */
+
+
+@media(max-width:1096px){
+    /* .navbar .logo-container .menu{
+        padding-right: calc(100% - 10%);
+    } */
+    .navbar img{
+        display: block;
+        font-size: 4rem;
+    }
+    .nav{
+        display: none;
+    }
+    .navbar .btn{
+        display: none;
+    }
+
+    .main{
+        width: 100%;
+        flex-direction: column;
+        padding-bottom: 80px;
+    }
+    .right{
+        width: auto;
+        
+    }
+    .left{
+        width: auto;
+        padding: 0;
+    }
+   
+    .btn-container{
+        position: relative;
+        bottom: -590px;
+    left: 3%;
+    z-index: 1;
+
+}
+    
+    .right img{
+        top: auto;
+    }
+
+.features{
+        display: block;
+        text-align: center;
+    }
+    .right .hero-img{
+        position: relative;
+    }
+     .logo{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+ .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 65%;
+}
+.btn{
+    font-size: 2.5rem;
+}
+.right .img {
+    position: absolute;
+    left: 500px;
+    top: 1019px;
+}
+.category{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;   
+}
+
+
+@media(max-width:600px) {
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .navbar img{
+        display: block;
+        font-size: 4rem;
+    }
+    .nav{
+        display: none;
+    }
+    .navbar .btn{
+        display: none;
+    }
+
+    .features{
+        display: block;
+        align-items: center;
+    }
+    .right .hero-img{
+        position: relative;
+        bottom: 26px;
+    }
+    .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 65%;
+    }
+    .btn-container{
+        z-index: 1;
+    }
+    .btn{
+        font-size: 2.5rem;
+    }
+    .right .img {
+        position: absolute;
+        left: 500px;
+        top: 1019px;
+    }
+}  
+}
