@@ -1,3 +1,5 @@
 # E-guru : A learning website
 
-[output_image](./assets/Mobile%20Responsive.jpg)
+## [Live View](https://e-guru.netlify.app/)
+
+[output_image](assets/Mobile%20Responsive.jpg)
